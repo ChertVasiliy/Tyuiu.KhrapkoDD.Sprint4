@@ -8,7 +8,7 @@ namespace Tyuiu.KhrapkoDD.Sprint4.Task0.V14
         {
             DataService ds = new DataService();
 
-            Console.Title = "Спринт #4 | Выполнил: Храпко Данил Дмитриевич | ИСТНб-24-1 ";
+            Console.Title = "Спринт #4 | Выполнил: Храпко Данил Дмитриевич | ИСТНб-24-1";
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #4                                                               *");
