@@ -1,11 +1,16 @@
-namespace Tyuiu.KhrapkoDD.Sprint4.Task2.V23.Test
+using Tyuiu.KhrapkoDD.Sprint4.Task2.V23.Lib;
+
+namespace Tyuiu.KhrapkoDD.Sprint4.Task2.V23.Test;
+
+[TestClass]
+public class DataServiceTest
 {
-    [TestClass]
-    public class UnitTest1
+    [TestMethod]
+    public void ValidExpression()
     {
-        [TestMethod]
-        public void TestMethod1()
-        {
-        }
+        DataService ds = new DataService();
+        int[] numsArray = { 8, 8, 5, 6, 5, 4, 4, 5, 8, 7, 6, 8, 7, 5, 8 };
+        int res = ds.Calculate(numsArray);
+        Assert.AreEqual(60, res);
     }
-}
+} 
